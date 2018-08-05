@@ -1,0 +1,26 @@
+{
+  "name": "drill3",
+  "version": "1.0.0",
+  "description": "Copying the data from the included `.csv` dataset:",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/simplesNotEZ/express3.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/simplesNotEZ/express3/issues"
+  },
+  "homepage": "https://github.com/simplesNotEZ/express3#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "cors": "^2.8.4",
+    "express": "^4.16.3"
+  }
+}
