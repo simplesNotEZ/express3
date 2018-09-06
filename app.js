@@ -7,7 +7,7 @@ const data = require('./students.json');
 
 const findById = (params, dataParam) => {
     for(let i = 0; i < dataParam.length; i++) {
-        let holderString = dataParam[i].ID.toString();
+        let holderString = dataParam[i].id.toString();
         if (params === holderString) {
             return dataParam[i];
         } 
@@ -27,7 +27,7 @@ app.get('/:id', (req, res, next) => {
     if (student) {
         res.json({"data": student});
     } else {
-        res.json({
+        res.status(404).json({
             error: {
                 "message": "No record found!"
             }
